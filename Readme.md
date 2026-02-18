@@ -14,8 +14,53 @@ cargo new project_name
 
 - Run code
 ```bash
-cargo run
+cargo build && cargo run
 ```
 
+```bash
+cargo install cargo-edit
+```
 
+- Add dependency
+```bash
+caro add dependencyName
+```
 
+- Add WebAssembly support In Rust compiler .WASM standard library download.No program install.
+
+```bash
+rustup target add wasm32-unknown-unknown
+```
+- wasm32       → 32-bit WebAssembly
+- unknown      → Operating system নেই
+- unknown      → ABI unspecified
+
+- If want to run rust code in browser
+
+```bash
+cargo build --target wasm32-unknown-unknown
+```
+
+- Set up trunk
+
+```bash
+cargo install trunk && ls $HOME/.cargo/bin | grep trunk
+```
+
+```bash
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+- Confirmation of trunk
+
+```bash
+which trunk
+trunk --version
+```
+
+- Check before build webassembly.
+
+```bash
+cargo check --target wasm32-unknown-unknown
+```
