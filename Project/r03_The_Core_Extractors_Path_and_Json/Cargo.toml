@@ -1,0 +1,9 @@
+[package]
+name = "r03_The_Core_Extractors_Path_and_Json"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.13.0"
+serde = { version = "1.0.157", features = ["derive"] }
+serde_json = "1.0.94"
