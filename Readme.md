@@ -32,7 +32,7 @@ caro add dependencyName
 rustup target add wasm32-unknown-unknown
 ```
 - wasm32       → 32-bit WebAssembly
-- unknown      → Operating system নেই
+- unknown      → No Operating system 
 - unknown      → ABI unspecified
 
 - If want to run rust code in browser
